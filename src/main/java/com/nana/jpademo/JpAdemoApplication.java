@@ -14,9 +14,10 @@ public class JpAdemoApplication {
         @Bean
         public CommandLineRunner run(EmployeeRepository repository){
             return (args ->{
-
-                insertJavaAdvocates(repository);
-                System.out.println(repository.findAll());
+//uncomment next 2 to print db to console
+//                insertJavaAdvocates(repository);
+//                System.out.println(repository.findAll());
+                System.out.println(repository.findEmployeeByLastNameContaining( ""));
             });
         }
 
