@@ -10,10 +10,12 @@ public class Employee {
     private Long id;
     private String firstName;
     private String lastName;
+    private String title;
 
-    public Employee(String firstName, String lastName) {
+    public Employee(String firstName, String lastName , String title) {
         this.firstName = firstName;
         this.lastName= lastName;
+        this.title = title;
 
     }
 

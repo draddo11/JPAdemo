@@ -22,9 +22,9 @@ public class JpAdemoApplication {
         }
 
     private void insertJavaAdvocates(EmployeeRepository repository){
-        repository.save(new Employee("Chris","Pine"));
-        repository.save(new Employee("Mandy","Mc Knight"));
-        repository.save(new Employee("Viktor","Van Doom"));
-        repository.save(new Employee("Peter","Parker"));
+        repository.save(new Employee("Chris","Pine", "Manager"));
+        repository.save(new Employee("Mandy","Mc Knight" , "Accountant"));
+        repository.save(new Employee("Viktor","Van Doom" , "CTO"));
+        repository.save(new Employee("Peter","Parker" ,"CEO"));
     }
 }
