@@ -39,6 +39,14 @@ public class Employee {
         this.lastName = lastName;
     }
 
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
     public Long getId() {
         return id;
     }
@@ -47,12 +55,16 @@ public class Employee {
         this.id = id;
     }
 
+
+
     @Override
     public String toString() {
         return "Employee{" +
                 "id=" + id +
                 ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
+                "title='" + title + '\'' +
                 '}';
+
     }
 }
